@@ -1,5 +1,5 @@
 appConfig:
-  theme: high-contrast-light
+  theme: glow
   layout: auto
   iconSize: large
   language: es
@@ -8,7 +8,7 @@ appConfig:
   statusCheck: false
   statusCheckInterval: 0
   backgroundImg: ''
-  faviconApi: allesedv
+  faviconApi: duckduckgo
   routingMode: history
   workspaceLandingUrl: https://sapiens-ia.com
   enableMultiTasking: false
@@ -27,10 +27,10 @@ appConfig:
     hideSettings: false
     hideFooter: false
   auth:
-    enableGuestAccess: true
+    enableGuestAccess: false
     users:
-      - user: carlos
-        hash: USER-1234
+      - user: ''
+        hash: ''
         type: normal
     enableKeycloak: false
   showSplashScreen: false
@@ -44,6 +44,11 @@ appConfig:
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
+  cssThemes:
+    - Bioshock
+    - DeusEx Machina
+  externalStyleSheet:
+    - https://accounts.sapiens-ia.com/sign-up
 pageInfo:
   title: Sapiens IA
   description: Welcome to Sapiens IA Laboratories!
@@ -73,40 +78,42 @@ sections:
         url: https://chat.sapiens-ia.com
         target: modal
         id: 1_1061_executiveai
-      - title: My Basilisk!
-        description: Crea tu propio Basilisk AI assistant en segundos!...
-        icon: >-
-          https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1h022radeig01veica51pec72sc.png
-        url: https://quickshttps://quickstart-chi.vercel.app/tart-chi.vercel.app/
-        target: modal
-        provider: sapiens IA
-        id: 2_1061_thearchives
-      - title: Showcase
-        description: See how others are using Dashy
-        icon: >-
-          https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1h022radeig01veica51pec72sc.png
-        url: https://quickstart-chi.vercel.app/
-        id: 3_1061_showcase
       - title: Config Guide
         description: See full list of configuration options
         url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
         icon: fas fa-wrench
-        id: 4_1061_configguide
+        id: 2_1061_configguide
       - title: Support
         description: Get help with Dashy, raise a bug, or get in contact
         url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
         icon: far fa-hands-helping
-        id: 5_1061_support
+        id: 3_1061_support
       - title: The Archive's
         description: Lee nuestro archivo de blogs, guias y escritos!...
         icon: far fa-book
         url: https://sapiens-ia.com/blog/the-archives
         target: workspace
         provider: Sapiens IA
-        id: 6_1061_thearchives
+        id: 4_1061_thearchives
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: false
       hideForGuests: false
+  - name: Quick-Start
+    icon: fas fa-user
+    displayData:
+      sortBy: default
+      rows: 2
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: My Basilisk's
+        description: Customize, train and deploy your AI assistant in seconds
+        icon: >-
+          https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1h022radeig01veica51pec72sc.png
+        url: https://quickstart-chi.vercel.app/
+        target: modal
+        id: 0_1080_mybasilisks
