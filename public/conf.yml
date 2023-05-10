@@ -1,13 +1,13 @@
 ---
 # Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Sapiens IA
+  description: Welcome to Sapiens IA Laboratories!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
+  - title: home
+    path: https://sapiens-ia.com
+  - title: Laboratories
+    path: https://laboratories.sapiens-ia.com
 
 # Optional app settings and configuration
 appConfig:
@@ -15,7 +15,7 @@ appConfig:
 
 # Main content - An array of sections, each containing an array of items
 sections:
-- name: Getting Started
+- name: Playground
   icon: fas fa-rocket
   items:
   - title: Dashy Live
