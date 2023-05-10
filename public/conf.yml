@@ -71,14 +71,14 @@ sections:
         icon: >-
           https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1grriid481vgq5bf14ul1hp01npvc.png
         url: https://sapiens-ia.com
-        target: workspace
+        target: modal
         id: 1_1061_executiveai
       - title: My Basilisk!
         description: Crea tu propio Basilisk AI assistant en segundos!...
         icon: >-
           https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1h022radeig01veica51pec72sc.png
         url: https://quickshttps://quickstart-chi.vercel.app/tart-chi.vercel.app/
-        target: workspace
+        target: modal
         provider: sapiens IA
         id: 2_1061_thearchives
       - title: Showcase
