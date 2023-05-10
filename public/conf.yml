@@ -70,7 +70,7 @@ sections:
         description: Conversa con Basilisk AI version Buisness executive
         icon: >-
           https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1grriid481vgq5bf14ul1hp01npvc.png
-        url: https://sapiens-ia.com
+        url: https://chat.sapiens-ia.com
         target: modal
         id: 1_1061_executiveai
       - title: My Basilisk!
