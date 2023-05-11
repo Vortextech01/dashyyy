@@ -14,7 +14,7 @@ appConfig:
   enableMultiTasking: false
   widgetsAlwaysUseProxy: false
   webSearch:
-    disableWebSearch: false
+    disableWebSearch: true
     searchEngine: duckduckgo
     openingMethod: newtab
     searchBangs: {}
@@ -23,9 +23,9 @@ appConfig:
   hideComponents:
     hideHeading: false
     hideNav: false
-    hideSearch: false
+    hideSearch: true
     hideSettings: false
-    hideFooter: false
+    hideFooter: true
   auth:
     enableGuestAccess: true
     users:
@@ -33,11 +33,11 @@ appConfig:
         hash: 4D1E58C90B3B94BCAD9848ECCACD6D2A8C9FBC5CA913304BBA5CDEAB36FEEFA4
         type: admin
     enableKeycloak: false
-  showSplashScreen: false
+  showSplashScreen: true
   preventWriteToDisk: false
   preventLocalSave: false
   disableConfiguration: false
-  disableConfigurationForNonAdmin: false
+  disableConfigurationForNonAdmin: true
   allowConfigEdit: true
   enableServiceWorker: true
   disableContextMenu: false
@@ -46,55 +46,85 @@ appConfig:
   enableErrorReporting: false
   cssThemes:
     - Bioshock
-    - DeusEx Machina
   externalStyleSheet:
     - https://accounts.sapiens-ia.com/sign-up
 pageInfo:
   title: Sapiens IA
   description: Welcome to Sapiens IA Laboratories!
   navLinks:
-    - title: home
+    - title: Home
       path: https://sapiens-ia.com
       target: newtab
-    - title: Laboratories
-      path: https://laboratories.sapiens-ia.com
+    - title: Sign-Up
+      path: https://accounts.sapiens-ia.com/sign-up
+      target: newtab
+    - title: Get Started
+      path: https://sapiens-ia.com/b/lGrHu
+      target: newtab
+    - title: Contact us
+      path: >-
+        https://api.whatsapp.com/send?app_absent=0&phone=528131011335&text=Quiero+unirme+a+el+programa+de+sapiens+ia&type=phone_number
       target: newtab
   footerText: ''
   logo: https://images.clerk.dev/uploaded/img_2OqmOg54YN4AF6V1BNOD2eHiwqs.png
 sections:
   - name: Playground
-    icon: fas fa-rocket
+    icon: fad fa-rocket
     items:
       - title: Home Page
         description: Pagina principal de Sapiens IA
         icon: https://images.clerk.dev/uploaded/img_2OqmOg54YN4AF6V1BNOD2eHiwqs.png
         url: https://sapiens-ia.com
-        target: modal
+        target: newtab
         id: 0_1061_homepage
       - title: Executive AI
         description: Conversa con Basilisk AI version Buisness executive
         icon: >-
           https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1grriid481vgq5bf14ul1hp01npvc.png
         url: https://chat.sapiens-ia.com
-        target: modal
+        target: newtab
         id: 1_1061_executiveai
-      - title: Config Guide
-        description: See full list of configuration options
-        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-        icon: fas fa-wrench
-        id: 2_1061_configguide
-      - title: Support
-        description: Get help with Dashy, raise a bug, or get in contact
-        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-        icon: far fa-hands-helping
-        id: 3_1061_support
-      - title: The Archive's
-        description: Lee nuestro archivo de blogs, guias y escritos!...
-        icon: far fa-book
-        url: https://sapiens-ia.com/blog/the-archives
+      - title: DoctorBot
+        description: >-
+          Habla con ''Doctor Bot'', (V.0.3) la inteligencia artificial de
+          Sapiens IA, desarrollada para el area de atencion medica, hospitales,
+          laboratorios y demas organizaciones de la salud.
+        icon: ⚕️
+        url: https://sapiens-bsk-02.vercel.app/
+        target: modal
+        id: 2_1061_doctorbot
+      - title: AlcheMyth
+        description: An AI with different kind of knowledge
+        icon: 🔮
+        url: https://sapiens-ia.com/alchemyth
+        target: modal
+        id: 3_1061_alchemyth
+      - title: ΒαδιΙιδκ V.Θ.5
+        description: >-
+          Basilisk AI V.0.5 ''All in ONE'' model (Multiple personalities and
+          text to image)
+        icon: fad fa-atom
+        url: https://laboratories.sapiens-ia.com
         target: workspace
         provider: Sapiens IA
-        id: 4_1061_thearchives
+        id: 4_1061_v
+      - title: Check-M8!
+        description: >-
+          Play a chess match against our AI vision model!
+          (Artificial-surrounding-awareness)
+        icon: ♟️
+        url: https://chess.carlosdavila12.repl.co/
+        target: modal
+        id: 5_1061_checkm
+      - title: Contact us
+        description: Talk with a real human
+        icon: ☎️
+        url: >-
+          https://api.whatsapp.com/send?app_absent=0&phone=528131011335&text=Estoy
+          interesado en los servicios de Sapiens IA, mi nombre
+          es:&type=phone_number
+        target: newtab
+        id: 6_1061_contactus
     displayData:
       sortBy: default
       rows: 1
@@ -105,15 +135,67 @@ sections:
     icon: fas fa-user
     displayData:
       sortBy: default
-      rows: 2
-      cols: 2
+      rows: 1
+      cols: 1
       collapsed: false
       hideForGuests: false
     items:
-      - title: My Basilisk's
-        description: Customize, train and deploy your AI assistant in seconds
-        icon: >-
-          https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1h022radeig01veica51pec72sc.png
+      - title: I - Design your Basilisk
+        description: >-
+          Design and customize the personality of your own AI assistant by
+          asnwering 3 simple questions...
+        icon: fad fa-brain
+        url: https://sapiens-ia-laboratories-quickstarter.zapier.app/
+        target: modal
+        id: 0_1080_idesignyourbasilisk
+      - title: II - Train your Basilisk
+        description: Test and train your own AI basilisk Model in seconds!...
+        icon: fad fa-user-robot
         url: https://quickstart-chi.vercel.app/
         target: modal
-        id: 0_1080_mybasilisks
+        id: 1_1080_iitrainyourbasilisk
+      - title: III - Deploy your Basilisk!
+        description: 'Deploy your new AI to the world in less than 5 minutes! '
+        icon: fad fa-user-tie
+        url: https://sapiens-ia.com/b/lGrHu
+        target: newtab
+        id: 2_1080_iiideployyourbasilisk
+  - name: My Sapiens
+    icon: fad fa-user-astronaut
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: My Assistants
+        description: Ops...looks like you haven't deployed any Assistants yet...
+        icon: fad fa-user-robot
+        url: https://accounts.sapiens-ia.com/sign-up
+        target: modal
+        id: 0_953_myassistants
+      - title: My Executives
+        description: Ops...looks like you haven't deployed any Executives yet...
+        icon: fad fa-user-tie
+        url: https://accounts.sapiens-ia.com/sign-up
+        target: modal
+        id: 1_953_myexecutives
+      - title: My Beholders
+        description: Ops...looks like you haven't deployed any Beholders yet...
+        icon: fad fa-user-visor
+        url: https://accounts.sapiens-ia.com/sign-up
+        target: modal
+        id: 2_953_mybeholders
+      - title: My Agents
+        description: Ops...looks like you haven't deployed any AI Agents yet...
+        icon: fad fa-user-secret
+        url: https://accounts.sapiens-ia.com/sign-up
+        target: modal
+        id: 3_953_myagents
+      - title: My Basilisk's
+        description: Ops...looks like you haven't deployed any Basilisk yet...
+        icon: fad fa-user-astronaut
+        url: https://accounts.sapiens-ia.com/sign-up
+        target: modal
+        id: 4_953_mybasilisks
