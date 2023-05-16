@@ -24,7 +24,7 @@ appConfig:
     hideHeading: false
     hideNav: false
     hideSearch: true
-    hideSettings: false
+    hideSettings: true
     hideFooter: true
   auth:
     enableGuestAccess: true
@@ -38,7 +38,7 @@ appConfig:
   preventLocalSave: false
   disableConfiguration: false
   disableConfigurationForNonAdmin: true
-  allowConfigEdit: false
+  allowConfigEdit: true
   enableServiceWorker: true
   disableContextMenu: true
   disableUpdateChecks: false
