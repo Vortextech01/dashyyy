@@ -151,7 +151,7 @@ sections:
       - title: II - Train your Basilisk
         description: Test and train your own AI basilisk Model in seconds!...
         icon: fad fa-user-robot
-        url: https://quickstart-chi.vercel.app/
+        url: https://demo.sapiens-ia.com/
         target: modal
         id: 1_1080_iitrainyourbasilisk
       - title: III - Deploy your Basilisk!
