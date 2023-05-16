@@ -1,7 +1,7 @@
 appConfig:
   theme: glow
   layout: auto
-  iconSize: large
+  iconSize: medium
   language: es
   startingView: default
   defaultOpeningMethod: workspace
@@ -33,21 +33,21 @@ appConfig:
         hash: 4D1E58C90B3B94BCAD9848ECCACD6D2A8C9FBC5CA913304BBA5CDEAB36FEEFA4
         type: admin
     enableKeycloak: false
-  showSplashScreen: true
+  showSplashScreen: false
   preventWriteToDisk: false
   preventLocalSave: false
   disableConfiguration: false
-  disableConfigurationForNonAdmin: false
+  disableConfigurationForNonAdmin: true
   allowConfigEdit: true
   enableServiceWorker: true
-  disableContextMenu: false
+  disableContextMenu: true
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
   cssThemes:
-    - Bioshock
+    - ''
   externalStyleSheet:
-    - https://accounts.sapiens-ia.com/sign-up
+    - ''
 pageInfo:
   title: Sapiens IA
   description: Welcome to Sapiens IA Laboratories!
@@ -55,10 +55,10 @@ pageInfo:
     - title: Home
       path: https://sapiens-ia.com
       target: newtab
-    - title: Sign-Up
+    - title: My Account
       path: https://accounts.sapiens-ia.com/sign-up
       target: newtab
-    - title: Get Started
+    - title: Pricing
       path: https://sapiens-ia.com/b/lGrHu
       target: newtab
     - title: Contact us
@@ -82,7 +82,7 @@ sections:
         icon: >-
           https://payhip.com/cdn-cgi/image/format=auto/https://pe56d.s3.amazonaws.com/o_1grriid481vgq5bf14ul1hp01npvc.png
         url: https://chat.sapiens-ia.com
-        target: newtab
+        target: workspace
         id: 1_1061_executiveai
       - title: DoctorBot
         description: >-
@@ -145,7 +145,7 @@ sections:
           Design and customize the personality of your own AI assistant by
           asnwering 3 simple questions...
         icon: fad fa-brain
-        url: https://sapiens-ia-laboratories-quickstarter.zapier.app/
+        url: https://starter.sapiens-ia.com/playground/
         target: modal
         id: 0_1080_idesignyourbasilisk
       - title: II - Train your Basilisk
