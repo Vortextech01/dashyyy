@@ -56,7 +56,7 @@ pageInfo:
       path: https://sapiens-ia.com
       target: newtab
     - title: My Account
-      path: https://accounts.sapiens-ia.com/sign-up
+      path: https://accounts.sapiens-ia.com/user
       target: newtab
     - title: Pricing
       path: https://starter.sapiens-ia.com/company/pricing
