@@ -59,7 +59,7 @@ pageInfo:
       path: https://accounts.sapiens-ia.com/sign-up
       target: newtab
     - title: Pricing
-      path: https://sapiens-ia.com/b/lGrHu
+      path: https://starter.sapiens-ia.com/company/pricing
       target: newtab
     - title: Contact us
       path: >-
@@ -97,7 +97,7 @@ sections:
         description: An AI with different kind of knowledge
         icon: 🔮
         url: https://sapiens-ia.com/alchemyth
-        target: modal
+        target: workspace
         id: 3_1061_alchemyth
       - title: ΒαδιΙιδκ V.Θ.5
         description: >-
@@ -145,7 +145,7 @@ sections:
           Design and customize the personality of your own AI assistant by
           asnwering 3 simple questions...
         icon: fad fa-brain
-        url: https://starter.sapiens-ia.com/playground/
+        url: https://starter.sapiens-ia.com/mybasilisk-design/
         target: modal
         id: 0_1080_idesignyourbasilisk
       - title: II - Train your Basilisk
