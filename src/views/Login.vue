@@ -20,7 +20,7 @@
     </div>
     <!-- Main login form -->
     <form class="login-form" v-if="(!isUserAlreadyLoggedIn) && isAuthenticationEnabled">
-      <h2 class="login-title">{{ $t('login.title') }}</h2>
+      <h2 class="login-title">{{ $t('SapiensIA') }}</h2>
       <Input type="text"
         v-model="username"
         :onEnter="submitLogin"
